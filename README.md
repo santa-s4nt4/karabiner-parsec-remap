@@ -2,7 +2,7 @@
 This is a script of karabiner for Parsec.
 
 ## Script details
-|Max|Win|
+|Mac|Win|
 |---|---|
 |Command|Control|
 |Control|Win|
