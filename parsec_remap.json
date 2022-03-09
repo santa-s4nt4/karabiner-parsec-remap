@@ -1,68 +1,75 @@
 {
-  "title": "win key-map for parsec",
+  "title": "Keychron K6 Better Escape Key",
   "rules": [
     {
-      "description": "This is win key-map for parsec.",
+      "description": "Shift + Esc to ~",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "left_command"
-          },
-          "to": [
-            {
-              "key_code": "left_control"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^tv\\.parsec\\.www"
+            "key_code": "escape",
+            "modifiers": {
+              "mandatory": [
+                "shift"
               ]
             }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "left_control"
           },
           "to": [
             {
-              "key_code": "left_command"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^tv\\.parsec\\.www"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "caps_lock"
-          },
-          "to": [
-            {
-              "key_code": "caps_lock",
+              "repeat": true,
+              "key_code": "grave_accent_and_tilde",
               "modifiers": [
                 "left_shift"
               ]
-            },
-            {
-              "key_code": "caps_lock"
             }
-          ],
-          "conditions": [
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Command + Esc to Command + ` (for window switching)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "escape",
+            "modifiers": {
+              "mandatory": [
+                "command"
+              ]
+            }
+          },
+          "to": [
             {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^tv\\.parsec\\.www"
+              "key_code": "grave_accent_and_tilde",
+              "modifiers": [
+                "command"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Command + Shift + Esc to Command + ~ (for reverse window switching)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "escape",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "grave_accent_and_tilde",
+              "modifiers": [
+                "command",
+                "shift"
               ]
             }
           ]
