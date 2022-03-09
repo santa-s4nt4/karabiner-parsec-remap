@@ -1,5 +1,5 @@
 # karabiner-parsec-remap
-This is a script of karabiner for Parsec.
+This is a script of karabiner for Parsec (and AnyDesk).
 
 ## Script details
 |Mac|Win|
